@@ -1,0 +1,276 @@
+
+/* Applies consistent sizing to every element */
+* {
+    box-sizing: border-box;
+}
+
+/* Positions the logo above the university name */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 14px;
+}
+
+/* Controls the logo size and appearance */
+.must-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+}
+/* Styles the entire page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f8;
+    background-color: red;
+    color: #344054;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+/* Main portal container */
+.portal {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Temporary university logo */
+.university-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    background: #e9edff;
+    color: #3547a8;
+    border: 2px solid #c8d0f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* University heading */
+h1 {
+    font-size: 24px;
+    line-height: 1.35;
+    color: #344767;
+    margin: 0 auto 14px;
+}
+
+/* Portal label below the heading */
+.portal-label {
+    display: inline-block;
+    background: #e8eaff;
+    color: #4654ae;
+    padding: 9px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+/* White card used by both interfaces */
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 28px rgba(20, 35, 70, 0.09);
+    text-align: left;
+}
+
+/* Hides a section when JavaScript adds this class */
+.hidden {
+    display: none;
+}
+
+/* Form headings */
+h2 {
+    font-size: 21px;
+    margin: 0 0 8px;
+    color: #344767;
+}
+
+/* Supporting text */
+.subtitle {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #8390a2;
+    margin: 0 0 22px;
+}
+
+/* Labels above form fields */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 18px 0 8px;
+}
+
+/* Text, email, phone and password fields */
+input {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dce2ea;
+    border-radius: 8px;
+    background: #fff;
+    color: #344054;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Highlight the input currently being used */
+input:focus {
+    border-color: #5865c5;
+    box-shadow: 0 0 0 3px rgba(88, 101, 197, 0.12);
+}
+
+/* Places the password and Show button together */
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Allows the password field to use available space */
+.password-wrapper input {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Styles the password visibility button */
+.eye-button {
+    border: none;
+    background: transparent;
+    color: #4654ae;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Main blue-purple buttons */
+.primary-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(110deg, #4658bb, #6250a9);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.primary-button:hover {
+    filter: brightness(1.08);
+}
+
+/* Text-only buttons and links */
+.text-button {
+    display: block;
+    margin-top: 15px;
+    padding: 4px 0;
+    border: none;
+    background: transparent;
+    color: #4b73b8;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Centres the new-user message */
+.new-user {
+    text-align: center;
+    margin: 24px 0 12px;
+}
+
+/* Outline button for creating an account */
+.outline-button {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #91b3d4;
+    border-radius: 9px;
+    background: white;
+    color: #426fa8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Positions the registration buttons side by side */
+.button-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Makes buttons share the available width */
+.button-row button {
+    flex: 1;
+    margin-top: 0;
+}
+
+/* Close and cancel button */
+.secondary-button {
+    padding: 12px;
+    border: 1px solid #dce2ea;
+    border-radius: 8px;
+    background: white;
+    color: #526071;
+    cursor: pointer;
+}
+
+/* Close icon at the top-right of registration card */
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    border: none;
+    background: transparent;
+    color: #526071;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Status and feedback messages */
+#message {
+    min-height: 20px;
+    margin: 14px auto;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer text */
+footer {
+    margin-top: 22px;
+    color: #8792a2;
+    font-size: 11px;
+}
+
+/* Adapts the design to smaller phone screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 19px;
+    }
+
+    .card {
+        padding: 25px 18px;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title> MUST Online Application Portal- Create Account</title>
+
+	<!-- Use the same stylesheet as the Login page-->
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+	<main class = "portal">
+		<div class = "university-logo">
+			<img src= "D:\Desktop\MUST LOGO.png" alt = "Mbarara University of Science and Technology Logo" class = "must-logo">
+		</div>
+		<h1> MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+		<p class = "portal-label"> Online Application Portal</p>
+
+		<!-- Registration interface-->
+		<section class = "card registration-card">
+
+		<!-- X link returns the user to the login page-->
+		<a href ="./index.html" class = "close-button" aria-label = "Return to Login"> X</a>
+		<h2> Create Account</h2>
+		<p class = "subtitle"> Provide Your details to a register for a temporary password.</p>
+		<form action = "#" method = "post">
+		<label for = "surname"> Surname</label>
+		<input type = "text" id = "surname" name = "surname" placeholder = "Surname" autocomplete = "family-name" required>
+		<label for = "other-names"> Other Names</label>
+		<input type = "text" id = "other-names" name = "other-names" autocomplete = "given-name" required> 
+		<label for = "Phone"> Phone Number</label>
+		<input type = "tel" id = "Phone"   name = "Phone" placeholder = "+256 782126067" autocomplete = "tel" required>
+		<p class = "hint"> Use An Active Phone Number to receive notifications.</p>
+		<label for = "email"> Email Address</label>
+		<input type = "email" id = "email" name = "email" placeholder = "myemail@gmail.com" autocomplete = "email" required>
+		<p class = "link-row">
+			<a href = "#" class = "text-link"> Don't have an email? click to create one.</a>
+		</p>
+
+		<!-- registration action buttons-->
+		<div class = "button-row">
+			<!-- Close returns to the login page-->
+			<a herf = "./index.html" class = "secondary-button"> Close</a>
+			<button type = "submit" class = "primary-button"> Create Account</button>
+		</div>
+	</form>
+</section>
+<footer>
+	<p> Student Application Portal</p>
+</footer>
+</main>
+</body>
+</html>
